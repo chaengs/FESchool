@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가변단위</title>
+    <style>
+      /* 부모가 가진 넓이의 절반 (body의 절반) /
+      .one {
+        height: 200px;
+        width: 50%;
+        background-color: darkblue;
+      }
+      / one의 절반 */
+      .two {
+        height: 100px;
+        width: 50%;
+        background-color: lightyellow;
+      }
+      .three {
+        height: 100px;
+        width: 50vw;
+        background-color: lavender;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- % -->
+
+    <div class="one">
+      <div class="two"></div>
+    </div>
+
+    <br />
+    <!-- vw, vh -->
+    <!-- 부모가 가진 넓이를 뚫어버림 -->
+    <div class="one">
+      <div class="three"></div>
+    </div>
+  </body>
+</html>

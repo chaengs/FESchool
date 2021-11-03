@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        a[href] {
+            font-size: 32px;
+        }
+        /* 태그[속성이름~="변수"] : 속성이름 의 속성값이 변수 를 포함하는 태그를 선택합니다.  */
+        a[href~="paullab"] {
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://paullab.co.kr">클릭해</a>
+    <a href="#">클릭해</a>
+    <a>클릭해</a>
+</body>
+</html>
