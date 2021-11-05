@@ -1,0 +1,48 @@
+.container {
+    width: 350px;
+    height: 135px;
+    border: 0.5px solid #dddddd;
+}
+p{
+    font-size: 14px;
+    color: #656565;
+    padding-left: 17.5px;
+}
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #333333;
+}
+button {
+    border: none;
+    width: 315px;
+    height: 48px;
+    background-color: #66cc00;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+
+.link {
+    padding-top: 10px;
+    padding-left: 17.5px;
+}
+
+.id::after {
+    content: " ·";
+}
+
+.signin {
+    float: right;
+    padding-right: 17.5px;
+}
+
+.small {
+    width: 10px;
+}
+
+.login img {
+    height: 30%;
+}
