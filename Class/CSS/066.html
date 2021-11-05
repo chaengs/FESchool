@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        li {
+            height: 100px;
+            background: pink;
+        }
+        li {
+            height: 100px;
+            background: pink;
+        }
+        li:nth-child(2) {
+            width: 100%;
+            float: left;
+            background: blue;
+        }
+        li:nth-child(3) {
+            /* 같은 형제 요소의 float 상태를 알고 싶으면 clear사용 */
+            /* l지금은 두번째 박스가 float: left니까 세번째 박스에게 니 형제 left에 있다로 clear: left 주는것 */
+            clear:left;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

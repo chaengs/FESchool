@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        .second{
+            position:absolute;
+            /* absolute를 주게 되면 세번째 div와 겹침 : 이유는 normal flow에서 벗어나기 때문에 3번째 div가 1번째 div 아래로 붙음 */
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div>안녕하세요</div>
+    <div class="second">안녕하세요</div>
+    <div>안녕하세요</div>
+</body>
+</html>
