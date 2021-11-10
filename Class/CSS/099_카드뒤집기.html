@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카드돌리기</title>
+    <style>
+        @keyframes turn {
+            from {
+                transform: rotateY(0);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .origin {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: solid 1px black;
+            perspective: 400px;
+            margin: 100px auto;
+            transform-style: preserve-3d;
+            animation: turn 20s;
+        }
+
+        .card {
+            position: absolute;
+            font-size: 32px;
+            width: 200px;
+            height: 200px;
+            transform: rotateY(150deg);
+            transform-style: preserve-3d;
+        }
+
+        .front {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: yellowgreen;
+            backface-visibility: hidden;
+        }
+        .front {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+            transform: rotate(180deg);
+            backface-visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="card">
+            <div class="front">front</div>
+            <div class="back">back</div>
+        </div>
+    </div>
+</body>
+</html>
