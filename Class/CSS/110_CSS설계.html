@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 설계</title>
+    <style>
+         /* 구조(structure)와 스킨의 분리 */
+        /* .btn {
+            width: 200px;
+            height: 80px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .btn-close {
+            background: black;
+            color: white;
+            border: 3px dotted #ffffff;
+        } */
+        /* #main .btn {
+            width: 300px;
+            padding: 20px 10px;
+            margin: 10px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        #main .general {
+            background: black;
+        } */
+
+        /* smacss 모듈 - subclass */
+        /* .btn {
+            display: inline-block;
+            width: 300px;
+            padding: 20px 10px;
+            font-size: 18px;
+            text-decoration: none;
+            text-align: center;
+            color: #fff;
+            background-color: brown;
+        }
+
+        .btn.btn-small {
+            width: 80px;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        .btn.btn-long {
+            width: 160px;
+        } */
+/* smacss 스테이트 */
+        /* .tabnav {
+            display: flex;
+        }
+
+        .tabnav li {
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        .tabnav li:first-child {
+            border-left: 1px solid black;
+        }
+
+        .tabnav li a {
+            display: block;
+            padding: 10px 30px;
+            text-decoration: none;
+        }
+
+        .is-active {
+            background-color: blanchedalmond;
+        }
+
+        .is-active a {
+            pointer-events: none;
+            color: red;
+        } */
+
+        /* 모듈 */
+        /* .mod {
+            border: 1px solid;
+        } */
+
+
+        /* 테마 */
+        /* .mod {
+            border-color: blue;
+        } */
+        /* class="green-box" */
+
+        /* bem block */
+        /* class="green-box"
+        class="error-red" */
+        .chapter-baseball_active-false {}
+    </style>
+</head>
+<body>
+    <!-- 구조(structure)와 스킨의 분리 -->
+    <!-- <button type="button" class="btn"></button>
+    <button type="button" class="btn btn-close"></button> -->
+
+    <!-- 컨테이너와 콘텐츠의 분리 -->
+    <!-- <main id="main">
+        <button type="button" class="btn general"></button>
+        <button type="button" class="btn warning"></button>
+    </main> -->
+
+    <!-- <a href="" class="btn btn-small btn-long">아이디/비밀번호 찾기</a>
+    <a href="" class="btn btn-small">로그인</a> -->
+    <!-- <ul class="tabnav">
+        <li class="tabnav__item"><a class="tabnav__link" href="">탭1</a></li>
+        <li><a href="">탭2</a></li>
+        <li><a href="">탭3</a></li>
+        <li><a href="">탭4</a></li>
+    </ul> -->
+    <!-- BEM -->
+    <section class="chapter-baseball">
+        <button type="button" class="chapter-baseball__btn chapter-baseball_active-false"></button>
+    </section>
+</body>
+</html>
