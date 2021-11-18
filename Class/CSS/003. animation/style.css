@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'SF_IceLemon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_IceLemon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes object-rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        /* turn이라는 단위는 정확히 한 바퀴를 돌리라는 의미입니다. */
+        transform: rotateY(1turn);
+    }
+}
+
+@keyframes scene-rotate {
+    0% {
+        transform: rotateX(0) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(10deg) rotateZ(-20deg);
+    }
+}
+
+body {
+    width: 100vh;
+}
+.circle:nth-child(1) {
+    color: #ffadad;
+}
+.circle:nth-child(2) {
+    color: #ffd6a5;
+}
+.circle:nth-child(3) {
+    color: #fdffb6;
+}
+.circle:nth-child(4) {
+    color: #caffbf;
+}
+.circle:nth-child(5) {
+    color: #9bf6ff;
+}
+.circle:nth-child(6) {
+    color: #a0c4ff;
+}
+.circle:nth-child(7) {
+    color: #bdb2ff;
+}
+.circle:nth-child(8) {
+    color: #ffc6ff;
+}
+.container {
+    font-family: 'SF_IceLemon';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scene {
+    transform-style: preserve-3d;
+    animation: scene-rotate 10s linear infinite alternate;
+}
+
+.circle {
+    font-size: 50px;
+    font-weight: bold;
+    animation: object-rotate 5s linear infinite;
+    /* Indicates that the children of the element should be positioned in the 3D-space. */
+    transform-style: preserve-3d;
+}
+.circle .word {
+    transform-style: preserve-3d;
+}
+.circle span {
+    position: absolute;
+    transform: rotateY(calc(var(--char-index)*12deg)) translateZ(250px);
+}
+
+.earth {
+    position: relative;
+    top: -84px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(to right, pink, purple)
+}
