@@ -17,6 +17,7 @@
     background-color: #fff;
     border:none;
     cursor: pointer;
+    padding: 0;
 }
 
 .module-inp .inp-login{
@@ -73,7 +74,8 @@
     width:22px;
     height:22px;
     margin-left:16px;
-    background-image:url("../images-login/icon_google.png");
+    background-image:url("../images-login/css_sprites.png");
+    background-position: -10px -10px;
 }
 
 .link-sns-login.icon-naver{
@@ -81,22 +83,19 @@
 }
 
 .link-sns-login.icon-naver::before{
-    background-image:url("../images-login/icon_naver.png");
+    background-position: -10px -52px;
 }
 .link-sns-login.icon-facebook{
     border-color:#2D9CDB;
 }
 
 .link-sns-login.icon-facebook::before{
-    /* background-image:url("../images-login/icon_facebook.png");
-    background-repeat:no-repeat;
-    background-position: center; */
-    background:url("../images-login/icon_facebook.png") center no-repeat;
+    background-position: -94px -10px;
 }
 .link-sns-login.icon-kakao{
     border-color:#F2C94C;
 }
 
 .link-sns-login.icon-kakao::before{
-    background-image:url("../images-login/icon_kakao.png");
+    background-position: -52px -10px;
 }
