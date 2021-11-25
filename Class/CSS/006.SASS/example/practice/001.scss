@@ -1,0 +1,15 @@
+/*이 주석은 css에서도 보인다*/
+//이 주석은 css로 변환되면 없어진다
+@charset "UTF-8";
+ul li {
+    color: red;
+    .two {
+        color: green;
+        .three {
+            font-size: 20px;
+        }
+        .four {
+            font-size: 30px;
+        }
+    }
+}
