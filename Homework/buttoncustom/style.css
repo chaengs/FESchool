@@ -7,15 +7,35 @@
     overflow: hidden;
 }
 
-.polygon {
-    position: absolute;
+* {
+    font-size: 14px;
+    line-height: 16px; 
+}
+
+.btn-select {
+    box-sizing: border-box;
+    padding: 0px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-select:hover {
+    border: 1px solid #9B51E0;
+    border-radius: 10px;
+    outline: 3px solid #F8E4FF;
+}
+
+.btn-select p {
+    margin: 0px;
+    text-align: left;
+    padding-left: 14px;
+}
+
+.btn-select p::after {
+    content: "";
     width: 12px;
-    height: 8px;
-    left: 11px;
-    top: 9px;
-    background-color: #C4C4C4;
-    border-radius: 1px;
-    transform: rotate(180deg);
+    background-image: url("./polygon.png");
 }
 
 .btn-select {
@@ -26,10 +46,6 @@
     border-radius: 10px;
 }
 
-/* .list-member {
-    display: none;
-} */
-
 .list-member.on {
     display: block;
 }
@@ -38,16 +54,32 @@
     display: block;
 }
 
-.list-member li {
-    position: relative;
-
-    list-style: none;
+.list-member {
+    display: none;
+    box-sizing: border-box;
     width: 200px;
+    background-color: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+    padding-left: 0px;
+}
+
+.list-member li {
+    list-style: none;
     height: 40px;
+    padding-left: 18px;
+}
+
+.list-member li:hover {
+    width: 184px;
+    background-color: #F8E4FF;
+    border-radius: 8px;
 }
 
 .list-member li button {
-    display: block;
-    width: 100%;
+    border: none;
+    background-color: transparent;
     height: 100%;
+    padding: 0px;
 }
