@@ -1,0 +1,80 @@
+let data = [
+    {
+    "_id": "61ad9e1288706c3bd2ede9fe",
+    "index": 0,
+    "picture": "http://placehold.it/32x32",
+    "age": 28,
+    "eyeColor": "green",
+    "name": "Bobbi Mendez",
+    "gender": "female",
+    "company": "NETPLODE",
+    "email": "bobbimendez@netplode.com",
+    "phone": "+1 (820) 532-2284",
+    "address": "407 Underhill Avenue, Beyerville, Texas, 6082"
+    },
+    {
+    "_id": "61ad9e126825963b35a79151",
+    "index": 1,
+    "picture": "http://placehold.it/32x32",
+    "age": 20,
+    "eyeColor": "brown",
+    "name": "Jeanie King",
+    "gender": "female",
+    "company": "HOUSEDOWN",
+    "email": "jeanieking@housedown.com",
+    "phone": "+1 (933) 489-2619",
+    "address": "489 High Street, Greenbush, Alaska, 4897"
+    },
+    {
+    "_id": "61ad9e121ee605c216f8902a",
+    "index": 2,
+    "picture": "http://placehold.it/32x32",
+    "age": 31,
+    "eyeColor": "brown",
+    "name": "Marietta Dillard",
+    "gender": "female",
+    "company": "PORTICO",
+    "email": "mariettadillard@portico.com",
+    "phone": "+1 (931) 483-2316",
+    "address": "415 Kathleen Court, Olney, Virgin Islands, 4682"
+    },
+    {
+    "_id": "61ad9e123c8516cb51b55ad3",
+    "index": 3,
+    "picture": "http://placehold.it/32x32",
+    "age": 23,
+    "eyeColor": "blue",
+    "name": "Lena Wagner",
+    "gender": "female",
+    "company": "RAMJOB",
+    "email": "lenawagner@ramjob.com",
+    "phone": "+1 (815) 447-3170",
+    "address": "391 Dobbin Street, Santel, Connecticut, 747"
+    },
+    {
+    "_id": "61ad9e1276ab66adf7cacbae",
+    "index": 4,
+    "picture": "http://placehold.it/32x32",
+    "age": 24,
+    "eyeColor": "blue",
+    "name": "Pratt Wynn",
+    "gender": "male",
+    "company": "VERTON",
+    "email": "prattwynn@verton.com",
+    "phone": "+1 (990) 422-3804",
+    "address": "538 Madison Street, Richmond, Minnesota, 302"
+    },
+    {
+    "_id": "61ad9e1211991f261a0eb2e0",
+    "index": 5,
+    "picture": "http://placehold.it/32x32",
+    "age": 28,
+    "eyeColor": "blue",
+    "name": "Maritza Huber",
+    "gender": "female",
+    "company": "PLASMOS",
+    "email": "maritzahuber@plasmos.com",
+    "phone": "+1 (901) 433-3702",
+    "address": "548 Ebony Court, Century, South Dakota, 8417"
+    }
+]
